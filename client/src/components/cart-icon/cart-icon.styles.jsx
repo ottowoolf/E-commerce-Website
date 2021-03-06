@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { ReactComponent as ShoppingIconSVG } from '../../assets/shopping-bag.svg';
+import { ReactComponent as ShoppingIconSVG } from "../../assets/shopping-bag.svg";
 
 export const CartContainer = styled.div`
   width: 45px;
@@ -10,6 +10,10 @@ export const CartContainer = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.5);
+  }
 `;
 
 export const ShoppingIcon = styled(ShoppingIconSVG)`
