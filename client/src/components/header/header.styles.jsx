@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
-  height: 60px;
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -10,19 +10,18 @@ export const HeaderContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     height: 60px;
-    padding: 10px;
     margin-bottom: 20px;
   }
 `;
 
 export const LogoContainer = styled(Link)`
-  height: 100%;
-  width: 70px;
-  padding: 10px;
+  height: 70%;
+  width: 10px;
 
-  @media screen and (max-width: 800px) {
-    width: 50px;
+  @media screen and (max-width: 550px) {
+    width: 20px;
     padding: 0;
+    display: none;
   }
 `;
 
